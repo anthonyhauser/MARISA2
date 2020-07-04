@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590705054920.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "5|33|21|0|\n23|26|39|0|\n46|34|64|0|\n67|21|73|0|\n76|23|101|0|\n103|36|135|0|\n142|26|471|0|\n1217|26|1219|0|\n1224|26|1362|0|\n1366|25|1507|0|\n1510|30|1512|0|\n1515|26|1658|0|\n1661|53|1701|0|\n1761|54|1829|0|\n",
+    "hash" : "0",
+    "id" : "4B619182",
+    "lastKnownWriteTime" : 1593381436,
+    "last_content_update" : 1593553494190,
+    "path" : "~/Step2/Step2_revised/models/SIR_NRTI_res_function.R",
+    "project_path" : "SIR_NRTI_res_function.R",
+    "properties" : {
+        "cursorPosition" : "529,25",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

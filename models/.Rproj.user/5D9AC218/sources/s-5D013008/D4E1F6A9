@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566563576285.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "4|33|11|0|\n12|39|576|0|\n577|27|604|0|\n607|41|1324|0|\n1330|45|1472|0|\n1473|50|1642|0|\n1645|32|1652|0|\n1653|39|1681|0|\n2196|34|2210|0|\n2213|32|2220|0|\n2221|36|2249|0|\n2250|57|2853|0|\n",
+    "hash" : "0",
+    "id" : "D4E1F6A9",
+    "lastKnownWriteTime" : 1591265775,
+    "last_content_update" : 1591949433281,
+    "path" : "~/Step2/Step2_revised/models/parmin_dtg.R",
+    "project_path" : "parmin_dtg.R",
+    "properties" : {
+        "cursorPosition" : "1682,44",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

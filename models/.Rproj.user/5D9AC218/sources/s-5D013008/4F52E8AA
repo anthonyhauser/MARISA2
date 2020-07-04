@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589983612173.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "152|305|250|0|\n251|312|336|0|\n",
+    "hash" : "0",
+    "id" : "4F52E8AA",
+    "lastKnownWriteTime" : 1593011518,
+    "last_content_update" : 1593011518327,
+    "path" : "~/Step2/Step2_revised/models/dtg_2.R",
+    "project_path" : "dtg_2.R",
+    "properties" : {
+        "cursorPosition" : "599,37",
+        "disableDependencyDiscovery" : "1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

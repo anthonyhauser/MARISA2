@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: dtg_supmat2.aux
+The style file: vancouver.bst
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: C:/Users/ahauser/Documents/Step2/Step2_revised/manuscript/dtg_bib_supmat.bib
+Warning--I didn't find a database entry for "F1000Research"
+Warning--empty author and editor in Hauser_github
+Warning--missing publisher in Hauser_github
+Warning--there's a month but no year in Hauser_github
+Warning--empty author and editor in WorldBank2015
+Warning--missing publisher in WorldBank2015
+You've used 25 entries,
+            3177 wiz_defined-function locations,
+            859 strings with 21123 characters,
+and the built_in function-call counts, 121736 in all, are:
+= -- 14530
+> -- 516
+< -- 0
++ -- 569
+- -- 129
+* -- 12007
+:= -- 13192
+add.period$ -- 114
+call.type$ -- 25
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 5166
+empty$ -- 12583
+format.name$ -- 150
+if$ -- 27860
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 313
+newline$ -- 146
+num.names$ -- 25
+pop$ -- 491
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 539
+stack$ -- 0
+substring$ -- 32021
+swap$ -- 680
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 279
+width$ -- 27
+write$ -- 313
+(There were 6 warnings)

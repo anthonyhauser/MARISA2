@@ -1,0 +1,213 @@
+\begin{thebibliography}{10}
+
+\bibitem{Egger2012}
+Egger M, Ekouevi DK, Williams C, Lyamuya RE, Mukumbi H, Braitstein P, et~al.
+\newblock {Cohort Profile: The international epidemiological databases to
+  evaluate AIDS (IeDEA) in sub-Saharan Africa}.
+\newblock International Journal of Epidemiology. 2012 oct;41(5):1256--1264.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/21593078
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3465765
+  https://academic.oup.com/ije/article-lookup/doi/10.1093/ije/dyr080}.
+
+\bibitem{Johnson2017b}
+Johnson LF, Dorrington RE.
+\newblock {Thembisa version 4.1: A model for evaluating the impact of HIV/AIDS
+  in South Africa}; 2018.
+\newblock Available from: \url{https://www.thembisa.org/publications}.
+
+\bibitem{Mangal2017}
+Mangal TD, {UNAIDS Working Group on CD4 Progression and Mortality Amongst HIV
+  Seroconverters including the CASCADE Collaboration in EuroCoord}.
+\newblock {Joint estimation of CD4+ cell progression and survival in untreated
+  individuals with HIV-1 infection}.
+\newblock AIDS. 2017 may;31(8):1073--1082.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/28301424
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5414573
+  http://insights.ovid.com/crossref?an=00002030-201705150-00003}.
+
+\bibitem{Hauser2019}
+Hauser A, Kusejko K, Johnson LF, Wandeler G, Riou J, Goldstein F, et~al.
+\newblock {Bridging the gap between HIV epidemiology and antiretroviral
+  resistance evolution: Modelling the spread of resistance in South Africa}.
+\newblock PLOS Computational Biology. 2019 jun;15(6):e1007083.
+\newblock Available from:
+  \url{http://dx.plos.org/10.1371/journal.pcbi.1007083}.
+
+\bibitem{Moorhouse2019}
+Moorhouse M, Maartens G, Venter WDF, Moosa MY, Steegen K, Jamaloodien K, et~al.
+\newblock {Third-Line Antiretroviral Therapy Program in the South African
+  Public Sector: Cohort Description and Virological Outcomes.}
+\newblock Journal of acquired immune deficiency syndromes (1999). 2019
+  jan;80(1):73--78.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/30334876
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC6319697}.
+
+\bibitem{res}
+Orrell C, Walensky RP, Losina E, Pitt J, Freedberg KA, Wood R.
+\newblock {HIV type-1 clade C resistance genotypes in treatment-naive patients
+  and after first virological failure in a large community antiretroviral
+  therapy programme.}
+\newblock Antiviral therapy. 2009;14(4):523--31.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/19578237
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3211093}.
+
+\bibitem{Sigaloff2012}
+Sigaloff KCE, Ramatsebe T, Viana R, de~Wit TFR, Wallis CL, Stevens WS.
+\newblock {Accumulation of HIV Drug Resistance Mutations in Patients Failing
+  First-Line Antiretroviral Treatment in South Africa}.
+\newblock AIDS Research and Human Retroviruses. 2012 feb;28(2):171--175.
+\newblock Available from:
+  \url{http://www.liebertpub.com/doi/10.1089/aid.2011.0136}.
+
+\bibitem{Wallis2010}
+Wallis CL, Mellors JW, Venter WDF, Sanne I, Stevens W.
+\newblock {Varied Patterns of HIV-1 Drug Resistance on Failing First-Line
+  Antiretroviral Therapy in South Africa}.
+\newblock JAIDS Journal of Acquired Immune Deficiency Syndromes. 2010
+  apr;53(4):480--484.
+\newblock Available from:
+  \url{https://insights.ovid.com/crossref?an=00126334-201004010-00007}.
+
+\bibitem{Manasa2013}
+Manasa J, Lessells RJ, Skingsley A, Naidu KK, Newell ML, McGrath N, et~al.
+\newblock {High-Levels of Acquired Drug Resistance in Adult Patients Failing
+  First-Line Antiretroviral Therapy in a Rural HIV Treatment Programme in
+  KwaZulu-Natal, South Africa}.
+\newblock PLoS ONE. 2013 aug;8(8):e72152.
+\newblock Available from:
+  \url{https://dx.plos.org/10.1371/journal.pone.0072152}.
+
+\bibitem{VanZyl2011}
+van Zyl GU, van~der Merwe L, Claassen M, Zeier M, Preiser W.
+\newblock {Antiretroviral resistance patterns and factors associated with
+  resistance in adult patients failing NNRTI-based regimens in the western
+  cape, South Africa}.
+\newblock Journal of Medical Virology. 2011 oct;83(10):1764--1769.
+\newblock Available from: \url{http://doi.wiley.com/10.1002/jmv.22189}.
+
+\bibitem{Hauser_github}
+Hauser A. {Acquired HIV drug resistance mutations on first-line antiretroviral
+  therapy in Southern Africa: Bayesian evidence synthesis};.
+\newblock Available from:
+  \url{https://github.com/anthonyhauser/ADR-meta-analysis}.
+
+\bibitem{rev}
+Yang WL, Kouyos RD, B{\"{o}}ni J, Yerly S, Klimkait T, Aubert V, et~al.
+\newblock {Persistence of Transmitted HIV-1 Drug Resistance Mutations
+  Associated with Fitness Costs and Viral Genetic Backgrounds}.
+\newblock PLOS Pathogens. 2015 mar;11(3):e1004722.
+\newblock Available from:
+  \url{http://dx.plos.org/10.1371/journal.ppat.1004722}.
+
+\bibitem{Wittkop2011}
+Wittkop L, G{\"{u}}nthard HF, de~Wolf F, Dunn D, Cozzi-Lepri A, de~Luca A,
+  et~al.
+\newblock {Effect of transmitted drug resistance on virological and
+  immunological response to initial combination antiretroviral therapy for HIV
+  (EuroCoord-CHAIN joint project): a European multicohort study}.
+\newblock The Lancet Infectious Diseases. 2011 may;11(5):363--371.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/21354861
+  http://linkinghub.elsevier.com/retrieve/pii/S1473309911700329}.
+
+\bibitem{Kuritzkes2008}
+Kuritzkes DR, Lalama CM, Ribaudo HJ, Marcial M, {Meyer III} WA, Shikuma C,
+  et~al.
+\newblock {Preexisting Resistance to Nonnucleoside Reverse‐Transcriptase
+  Inhibitors Predicts Virologic Failure of an Efavirenz‐Based Regimen in
+  Treatment‐Naive HIV‐1–Infected Subjects}.
+\newblock The Journal of Infectious Diseases. 2008 mar;197(6):867--870.
+\newblock Available from:
+  \url{https://academic.oup.com/jid/article-lookup/doi/10.1086/528802}.
+
+\bibitem{Hakim2018}
+Hakim JG, Thompson J, Kityo C, Hoppe A, Kambugu A, van Oosterhout JJ, et~al.
+\newblock {Lopinavir plus nucleoside reverse-transcriptase inhibitors,
+  lopinavir plus raltegravir, or lopinavir monotherapy for second-line
+  treatment of HIV (EARNEST): 144-week follow-up results from a randomised
+  controlled trial}.
+\newblock The Lancet Infectious Diseases. 2018 jan;18(1):47--57.
+\newblock Available from:
+  \url{http://www.thelancet.com/article/S1473309917306308/fulltext
+  http://www.thelancet.com/article/S1473309917306308/abstract
+  https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(17)30630-8/abstract}.
+
+\bibitem{Giacomelli2019}
+Giacomelli A, Lai A, Franzetti M, Maggiolo F, {Di Giambenedetto} S, Borghi V,
+  et~al.
+\newblock {No impact of previous NRTIs resistance in HIV positive patients
+  switched to DTG+2NRTIs under virological control: Time of viral suppression
+  makes the difference.}
+\newblock Antiviral Research. 2019 dec;172.
+\newblock Available from: \url{https://pubmed.ncbi.nlm.nih.gov/31629714/}.
+
+\bibitem{Group2019}
+Group TNAS.
+\newblock {Dolutegravir-Based or Low-Dose Efavirenz–Based Regimen for the
+  Treatment of HIV-1}.
+\newblock New England Journal of Medicine. 2019 aug;381(9):816--826.
+\newblock Available from: \url{http://www.nejm.org/doi/10.1056/NEJMoa1904340}.
+
+\bibitem{transm}
+Patel P, Borkowf CB, Brooks JT, Lasry A, Lansky A, Mermin J.
+\newblock {Estimating per-act HIV transmission risk}.
+\newblock AIDS. 2014 jun;28(10):1509--1519.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/24809629
+  http://content.wkhealth.com/linkback/openurl?sid=WKPTLP:landingpage{\&}an=00002030-201406190-00014}.
+
+\bibitem{p_msm}
+{Anova Health Institute}.
+\newblock {Rapid Assessment of HIV Prevention, Care and Treatment Programming
+  for MSM in South Africa}; 2013.
+
+\bibitem{mort1}
+Maduna PH, Dolan M, Kondlo L, Mabuza H, Dlamini JN, Polis M, et~al.
+\newblock {Morbidity and Mortality According to Latest CD4+ Cell Count among
+  HIV Positive Individuals in South Africa Who Enrolled in Project Phidisa}.
+\newblock PLOS ONE. 2015 apr;10(4):e0121843.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/25856495
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4391777
+  http://dx.plos.org/10.1371/journal.pone.0121843}.
+
+\bibitem{mort2}
+Brennan AT, Maskew M, Sanne I, Fox MP.
+\newblock {The interplay between CD4 cell count, viral load suppression and
+  duration of antiretroviral therapy on mortality in a resource-limited
+  setting.}
+\newblock Tropical medicine {\&} international health : TM {\&} IH. 2013
+  may;18(5):619--31.
+\newblock Available from: \url{http://www.ncbi.nlm.nih.gov/pubmed/23419157
+  http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC3625450}.
+
+\bibitem{Kuhnert2018}
+K{\"{u}}hnert D, Kouyos R, Shirreff G, Pe{\v{c}}erska J, Scherrer AU,
+  B{\"{o}}ni J, et~al.
+\newblock {Quantifying the fitness cost of HIV-1 drug resistance mutations
+  through phylodynamics}.
+\newblock PLOS Pathogens. 2018 feb;14(2):e1006895.
+\newblock Available from:
+  \url{http://dx.plos.org/10.1371/journal.ppat.1006895}.
+
+\bibitem{Rhee2017}
+Rhee SY, Varghese V, Holmes SP, {Van Zyl} GU, Steegen K, Boyd MA, et~al.
+\newblock {Mutational Correlates of Virological Failure in Individuals
+  Receiving a WHO-Recommended Tenofovir-Containing First-Line Regimen: An
+  International Collaboration}.
+\newblock EBioMedicine. 2017 apr;18:225--235.
+\newblock Available from: \url{https://pubmed.ncbi.nlm.nih.gov/28365230/}.
+
+\bibitem{WorldBank2015}
+{World Bank}. {Contraceptive prevalence, any methods ({\%} of women ages 15-49)
+  | Data}; 2015.
+\newblock Available from:
+  \url{https://data.worldbank.org/indicator/SP.DYN.CONU.ZS?locations=ZA}.
+
+\bibitem{Snedecor2019}
+Snedecor SJ, Radford M, Kratochvil D, Grove R, Punekar YS.
+\newblock {Comparative efficacy and safety of dolutegravir relative to common
+  core agents in treatment-na{\"{i}}ve patients infected with HIV-1: A
+  systematic review and network meta-analysis}.
+\newblock BMC Infectious Diseases. 2019 may;19(1).
+\newblock Available from: \url{/pmc/articles/PMC6543679/?report=abstract
+  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6543679/}.
+
+\end{thebibliography}

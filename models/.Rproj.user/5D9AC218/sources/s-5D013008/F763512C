@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589977327090.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "0|33|16|0|\n18|26|34|0|\n36|25|38|0|\n54|21|60|0|\n62|23|87|0|\n89|36|121|0|\n127|25|419|0|\n425|26|732|0|\n",
+    "hash" : "0",
+    "id" : "F763512C",
+    "lastKnownWriteTime" : 1591267416,
+    "last_content_update" : 1591274135985,
+    "path" : "~/Step2/Step2_revised/models/SIR_new_function.R",
+    "project_path" : "SIR_new_function.R",
+    "properties" : {
+        "cursorPosition" : "420,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

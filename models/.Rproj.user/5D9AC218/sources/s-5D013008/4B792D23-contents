@@ -1,0 +1,140 @@
+library(deSolve)
+library(zoo)
+library("Rcpp")
+library("BH")
+
+##############################################################################################################################
+#Assumptions
+#load params from value_gender4_v5.R and p1, p2 from graphs.R
+#source("value_gender4_v4.R")
+source("value_gender4_v5.R")
+p1=c(rate1_inf=3.318999e+00, rate2_inf=5.440886e-01, rate1_diag=2.736363e+02, rate2_diag=7.710578e+00, rate_treat=1.879695e-03,rate_death=1.632000e-01)
+p2=c(rate1_inf=NA, rate2_inf=NA, rate1_diag=NA, rate2_diag=NA, rate_treat=NA,rate_death=NA,q=0.05,rate_ratio=0.5,k1=1,k2=2,k3=2,alpha=2,rate_res=5,rate_susc=125)
+#no treatment interruption
+params<-within(params,{
+  RateStopTreatFirst=4.35/c(Inf,Inf,Inf,Inf)
+  RateStopSuppFirst=4.35/c(Inf,Inf,Inf,Inf)
+  RateStopFailFirst=4.35/c(Inf,Inf,Inf,Inf)
+  RateStopTreatSecond=4.35/c(Inf,Inf,Inf,Inf) #Assumption : T2 same as T1
+  RateStopSuppSecond=4.35/c(Inf,Inf,Inf,Inf)
+  RateStopFailSecond=4.35/c(Inf,Inf,Inf,Inf)
+})
+#no starting with second-line PI
+params<-within(params,{
+  #RateDirectTreatSecond=4.35/c(5000,12000,13000,1850)
+  RateTreatSecond=c(0,0,0,0)
+  RateTreatSecond_noDTG=c(0,0,0,0)
+  RateDirectTreatSecond=c(0,0,0,0)
+})
+#Resistance parameters
+p2["alpha"]=2
+p2["alpha2"]=2
+
+p2["alpha"]=2.64
+p2["alpha2"]=4.9
+
+##############################################################################################################################
+#different dtg prescription levels in women
+treat_dtg8=c(p_w_start=1,p_w_switch=1,rate_first=1,rate_switch=1,p_treat=1,p_supp=1,p_fail=1,delay_first=0,delay_switch=0)
+
+##############################################################################################################################
+# #Functions and dataset
+# #source("C:/Users/ahauser/Documents/Step1/Rfiles/used scripts/marisa/parmin4_v3.R")
+# #sourceCpp("C:/Users/ahauser/Documents/Step2/dtg/solvdiff_cpp_dtg_2_2005.cpp")
+# source("parmin4_v3.R")
+# sourceCpp("solvdiff_cpp_dtg_2_2005.cpp")
+# 
+# #ARGS
+# args=(commandArgs(TRUE))
+# args=as.numeric(unlist(args))
+# print(args)
+# 
+# #Load data
+# #load(paste("C:/Users/ahauser/Documents/Step2/R_results/dtg_sens/dtg_sens5/dtg_sens",i,".RData",sep=""))
+# load(paste("dtg_sens",args,".RData",sep=""))
+# #Start points, 1) number of people in 13, 2) number of people arriving in 13
+# #list_xstart=lapply(list_data,function(x) x[dim(x)[1],select(3,1:4,1,1:2)])
+# list_xstart2025=lapply(list_data,function(x) x[(20*12+1),243:250]-x[(20*12+1-6),243:250])
+# list_xstart2030=lapply(list_data,function(x) x[(25*12+1),243:250]-x[(25*12+1-6),243:250])
+# list_xstart2035=lapply(list_data,function(x) x[(30*12+1),243:250]-x[(30*12+1-6),243:250])
+# 
+# data_sup_list2025=as.list(rep(NA,201))
+# data_sup_list2030=as.list(rep(NA,201))
+# data_sup_list2035=as.list(rep(NA,201))
+# #for(j in 1:length(list_xstart2025)){
+# # print(length(list_xstart2025))
+# 
+# 
+# for(j in 1:2){
+#   theta=p1
+#   theta[1:2]=0
+# 
+#   xstart2030=rep(0,250)
+#   xstart2030[select_15(13,1:4,1:2,2)]=list_xstart2030[[j]]
+#   data_sup_list2030[[j]]=as.numeric(my_fun10_solver2_dtg_2(xstart2030,theta,treat_dtg8,params,p2))
+#   print("ok-1")
+#   
+#   xstart2025=rep(0,250)
+#   xstart2025[select_15(13,1:4,1:2,2)]=list_xstart2025[[j]]
+#   data_sup_list2025[[j]]=as.numeric(my_fun10_solver2_dtg_2(xstart2025,theta,treat_dtg8,params,p2))
+#   
+#   xstart2035=rep(0,250)
+#   xstart2035[select_15(13,1:4,1:2,2)]=list_xstart2035[[j]]
+#   data_sup_list2035[[j]]=as.numeric(my_fun10_solver2_dtg_2(xstart2035,theta,treat_dtg8,params,p2))
+# 
+#   if(j%%5==0){
+#     print(j)
+#   }
+# }
+# 
+# save(data_sup_list2025,file="data_sup_list2025.RData")
+# save(data_sup_list2030,file="data_sup_list2030.RData")
+# save(data_sup_list2035,file="data_sup_list2035.RData")
+
+
+##############################################################################################################################
+#Functions and dataset
+# source("C:/Users/ahauser/Documents/Step1/Rfiles/used scripts/marisa/parmin4_v3.R")
+#sourceCpp("C:/Users/ahauser/Documents/Step2/dtg/solvdiff_cpp_dtg_2_2005.cpp")
+source("parmin_dtg.R")
+sourceCpp("solvdiff_cpp_dtg_2_2005.cpp")
+
+#ARGS
+args=(commandArgs(TRUE))
+args=as.numeric(unlist(args))
+print(args)
+i=args[1]
+j=args[2]
+
+#Load data
+#Load data produced by ub2.job
+#load(paste("C:/Users/ahauser/Documents/Step2/R_results/dtg_sens/dtg_sens7/data1_",index_list[i],"_",j,".RData",sep=""))
+load(paste("data1_",i,"_",j,".RData",sep=""))
+#Start points, 1) number of people in 13, 2) number of people arriving in 13
+#list_xstart=lapply(list_data,function(x) x[dim(x)[1],select(3,1:4,1,1:2)])
+start=function(x,year){
+  #return(apply(array(x[(year-2005)*12+1,select_15(12,1:4,1:2,1:2)],dim=c(4,2,2)),c(1,2),sum))
+  return(x[((year-2005)*12+1),243:250]-x[((year-2005)*12+1-6),243:250])
+}
+list_xstart2025=start(data1,2025)
+
+#Load data produced by ub.job
+# #load(paste("C:/Users/ahauser/Documents/Step2/R_results/dtg_sens/dtg_sens5/dtg_sens",i,".RData",sep=""))
+# load(paste("dtg_sens",args[1],".RData",sep=""))
+# #Start points, 1) number of people in 13, 2) number of people arriving in 13
+# #list_xstart=lapply(list_data,function(x) x[dim(x)[1],select(3,1:4,1,1:2)])
+# list_xstart2025=lapply(list_data,function(x) x[(20*12+1),243:250]-x[(20*12+1-6),243:250])
+# list_xstart2030=lapply(list_data,function(x) x[(25*12+1),243:250]-x[(25*12+1-6),243:250])
+# list_xstart2035=lapply(list_data,function(x) x[(30*12+1),243:250]-x[(30*12+1-6),243:250])
+#
+# # list_xstart2025=lapply(list_data,function(x) sum(x[20*12+1,select_15(12,1:4,2,1:2)])/sum(x[20*12+1,select_15(12,1:4,1:2,1:2)]))
+# # list_xstart2030=lapply(list_data,function(x) sum(x[25*12+1,select_15(12,1:4,2,1:2)])/sum(x[25*12+1,select_15(12,1:4,1:2,1:2)]))
+# # list_xstart2035=lapply(list_data,function(x) sum(x[30*12+1,select_15(12,1:4,2,1:2)])/sum(x[30*12+1,select_15(12,1:4,1:2,1:2)]))
+
+theta=p1
+theta[1:2]=0
+
+xstart2025=rep(0,250)
+xstart2025[select_15(13,1:4,1:2,2)]=list_xstart2025
+data_2025=my_fun10_solver2_dtg_2(xstart2025,theta,treat_dtg8,params,p2)
+save(data_2025,file="data_sup_list2025.RData")

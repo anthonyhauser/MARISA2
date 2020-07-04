@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#heatmap for Ubelix array\n#Heatmap, with x changing switching rate to dtg for supp or just start people\nlibrary(deSolve)\nlibrary(zoo)\nlibrary(\"Rcpp\")\nlibrary(\"BH\")\nlibrary(\"RColorBrewer\")\n\n#adapt params\n#Assumptions\n#load params from value_gender4_v3.R and p1, p2 from graphs.R\n#source(\"C:/Users/ahauser/Documents/Step1/Rfiles/used scripts/marisa/value_gender4_v3.R\")\nsource(\"value_gender4_v4.R\")\nsource(\"parmin4_v3.R\")\nsourceCpp(\"solvdiff_cpp_dtg_2_2019.cpp\")\nload(\"data_dtg_2005_2019.RData\")\n\np1=c(rate1_inf=3.318999e+00, rate2_inf=5.440886e-01, rate1_diag=2.736363e+02, rate2_diag=7.710578e+00, rate_treat=1.879695e-03,rate_death=1.632000e-01)\np2=c(rate1_inf=NA, rate2_inf=NA, rate1_diag=NA, rate2_diag=NA, rate_treat=NA,rate_death=NA,q=0.05,rate_ratio=0.5,k1=1,k2=2,k3=2,alpha=2,rate_res=5,rate_susc=125)\ntheta=p1\n#no treatment interruption\nparams<-within(params,{\n  RateStopTreatFirst=4.35/c(Inf,Inf,Inf,Inf)\n  RateStopSuppFirst=4.35/c(Inf,Inf,Inf,Inf)\n  RateStopFailFirst=4.35/c(Inf,Inf,Inf,Inf)\n  RateStopTreatSecond=4.35/c(Inf,Inf,Inf,Inf) #Assumption : T2 same as T1\n  RateStopSuppSecond=4.35/c(Inf,Inf,Inf,Inf)\n  RateStopFailSecond=4.35/c(Inf,Inf,Inf,Inf)\n})\n#no starting with second-line PI\nparams<-within(params,{\n  #RateDirectTreatSecond=4.35/c(5000,12000,13000,1850)\n  RateTreatSecond=4.35/c(531,427,294,189)*1/5\n  RateDirectTreatSecond=c(0,0,0,0)\n})\n#Resistance parameters\np2[\"alpha\"]=2\np2[\"alpha2\"]=2\n\np2[\"alpha\"]=2.64\np2[\"alpha2\"]=4.9\n###########################################################################################################################\n#Ubelix simulation\nxstart_dtg_2_2018=data[dim(data)[1],]\n\nargs=(commandArgs(TRUE))\nprint(args)\nargs=as.numeric(unlist(args))\ni=args[1]\nj=args[2]\n#1) rate\n# i_len=51\n# j_len=51\n# x=(i-1)/(i_len-1)\n# y=(j-1)/(j_len-1)\n#2) time: from 1 to 20 equally spaced\ni_len=39\nj_len=51\n#x=1/(1+(i-1)/(i_len-1)*19)\nx=1/(0.5+(i-1)/(i_len-1)*9.5)\ny=(j-1)/(j_len-1)\n\ntreat_dtg=c(p_w_start=y,p_w_switch=y,rate_first=1,rate_switch=x,p_treat=1,p_supp=1,p_fail=1,delay_first=0,delay_switch=0)\nxstart=xstart_dtg_2_2018\nxstart[select_15(12:15,1:4,1:2,2)]=(1-treat_dtg[1])*(xstart_dtg_2_2018[select_15(2:5,1:4,1:2,2)]+xstart_dtg_2_2018[select_15(12:15,1:4,1:2,2)])\nxstart[select_15(2:5,1:4,1:2,2)]=treat_dtg[1]*(xstart_dtg_2_2018[select_15(2:5,1:4,1:2,2)]+xstart_dtg_2_2018[select_15(12:15,1:4,1:2,2)])\ndata_h=my_fun10_solver2_dtg_2(xstart,theta,treat_dtg,params,p2)\n\ndim(data_h)\napply(data_h,1,sum)\n\nrownames(data_h)=1:(dim(data_h)[1])\ndata_h=rbind(data[-dim(data)[1],],data_h)\n\ndim(data_h)\napply(data_h,1,sum)\n\nsave(data_h,file=paste(\"heatmap_ub\",\".RData\",sep=\"\"))",
+    "created" : 1551285118872.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "816513351",
+    "id" : "51D7D655",
+    "lastKnownWriteTime" : 1560249145,
+    "last_content_update" : 1560249145236,
+    "path" : "~/Step2/dtg/heatmap_ub.R",
+    "project_path" : "heatmap_ub.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

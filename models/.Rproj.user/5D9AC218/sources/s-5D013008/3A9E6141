@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592409185451.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4177939973",
+    "id" : "3A9E6141",
+    "lastKnownWriteTime" : 1593792874,
+    "last_content_update" : 1593792874308,
+    "path" : "~/Step2/Step2_revised/models/manuscript_plot.R",
+    "project_path" : "manuscript_plot.R",
+    "properties" : {
+        "cursorPosition" : "507,0",
+        "scrollLine" : "470",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 15,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

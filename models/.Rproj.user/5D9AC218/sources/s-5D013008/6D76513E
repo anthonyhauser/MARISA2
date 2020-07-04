@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592406554848.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6D76513E",
+    "lastKnownWriteTime" : 1593595670,
+    "last_content_update" : 1593595670840,
+    "path" : "~/Step2/Step2_revised/models/dtg_sens_scen.R",
+    "project_path" : "dtg_sens_scen.R",
+    "properties" : {
+        "cursorPosition" : "77,92",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
